@@ -55,9 +55,7 @@ void loop() {
     digitalWrite(pino_bomba,LOW);
   }
  
-  //delay(1000);
-  
-  
+  //delay(1000); 
 }
 
 

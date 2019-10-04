@@ -1,0 +1,34 @@
+body{
+    background-color: #E0E0E0;
+    align-content: center;
+  }
+
+  .content {
+    margin-top: 30px;
+  }
+
+  nav {
+    background-color: #348119;
+  }
+
+  .statistic {
+    font-size: 8em;
+    margin-top: 15px !important;
+  }
+
+  .card {
+    min-height: 250px;
+  }
+  .card2 {
+    min-height: 250px;
+  }
+
+  .activator {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 600px){
+    .statistic {
+      font-size: 5em;
+    }
+  }

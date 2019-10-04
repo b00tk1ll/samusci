@@ -1,104 +1,73 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>SAMUSCI</title>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SAMUSCI - Sistema Autônomo de Monitoramento de Umidade do Solo e Controle de Irrigação</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Styles Files -->
+    <meta rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-    <style>
-      body{
-        background-color: #E0E0E0;
-      }
-
-      .content {
-        margin-top: 30px;
-      }
-
-      nav {
-        background-color: #348119;
-      }
-
-      .statistic {
-        font-size: 8em;
-        margin-top: 15px !important;
-      }
-
-      .card {
-        min-height: 250px;
-      }
-      .card2 {
-        min-height: 250px;
-      }
-
-      .activator {
-        cursor: pointer;
-      }
-
-      @media screen and (max-width: 600px){
-        .statistic {
-          font-size: 5em;
-        }
-      }
-
-    </style>
-
-  </head>
-  <body>
-    <center>
+    <link rel="stylesheet" href="/res/css/stylesheet.css" type="text/css">
+</head>
+<body>
     <div class="navbar-fixed">
-      <nav class="nav-extended">
+        <nav class="nav-extended">
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo center">SAMUSCI</a>
+            <a href="#" class="brand-logo center">SAMUSCI</a>
         </div>
         <div class="nav-content center">
-          <h6>Sistema Autônomo de Monitoramento de Umidade do Solo e Controle de Irrigação</h6>
+            <h6>Sistema Autônomo de Monitoramento de Umidade do Solo e Controle de Irrigação</h6>
         </div>
-      </nav>
+        </nav>
     </div>
+
     <div class="container content">
-      <br/>
-      <div class="row">
+        <br/>
+        <div class="row">
         
-          <div class="card">
+            <div class="card">
             <div class="card-image center">
-              <span id="currentUmid" class="statistic">-</span>
+                <span id="currentUmid" class="statistic">-</span>
             </div>
             <div class="card-content activator">
-              <span class="card-title grey-text text-darken-4">
+                <span class="card-title grey-text text-darken-4">
                 Umidade do Solo
                 <i class="material-icons right">more_vert</i>
-              </span>
-              Clique para ver histórico
+                </span>
+                Clique para ver histórico
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">
+                <span class="card-title grey-text text-darken-4">
                 Histórico
                 <i class="material-icons right">close</i>
-              </span>
-              <canvas id="umidLineChart"></canvas>
+                </span>
+                <canvas id="umidLineChart"></canvas>
             </div>  
         </div>
-          <div class="card" style="padding-bottom:20px">
+
+        <div class="card" style="padding-bottom:20px">
             <div class="card-image center">
-              <i id="currentLamp" class="material-icons statistic">flash_on</i>
+                <i id="currentLamp" class="material-icons statistic">flash_on</i>
             </div>
             <div class="card-content">
-              <span class="card-title grey-text text-darken-4">
+                <span class="card-title grey-text text-darken-4">
                 Bomba irrigação
-              </span>
-              <a class="waves-effect waves-light btn col s12" id="btn-lamp">
+                </span>
+                <a class="waves-effect waves-light btn col s12" id="btn-lamp">
                 <i class="material-icons left">flash_on</i>
                 Ligar/Desligar
-              </a>
+                </a>
             </div>
-          </div>
+        </div>
     </div>
-  </center>
-  </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-  <script src="app.js"></script>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="/res/js/app.js"></script>
+</body>
+</html>
